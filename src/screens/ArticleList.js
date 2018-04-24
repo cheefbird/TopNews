@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { ScrollView, View } from "react-native";
+import { List, ListItem } from "native-base";
 
 import ArticleCard from "../components/ArticleCard";
 
@@ -23,15 +23,19 @@ class ArticleList extends Component {
       .then(articles => this.setState({ articles }));
   }
 
-  renderArticles() {
-    return this.state.articles.map(article => (
-      <ArticleCard key={article.title} article={article} />
-    ));
+  renderArticle(article) {
+    return (
+      <ListItem button>
+        <ArticleCard article={article} />
+      </ListItem>
+    );
   }
 
   render() {
     console.log(this.state);
-    return <ScrollView>{this.renderArticles()}</ScrollView>;
+    return (
+      <List dataArray={this.state.articles} renderRow={this.renderArticle} />
+    );
   }
 }
 

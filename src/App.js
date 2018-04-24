@@ -1,14 +1,22 @@
 import React, { Component } from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet } from "react-native";
+import { Container, Header, Body, Title, Content } from "native-base";
 
 import ArticleList from "./screens/ArticleList";
 
 export default class App extends Component {
   render() {
     return (
-      <View>
-        <ArticleList />
-      </View>
+      <Container>
+        <Header>
+          <Body>
+            <Title>Top News</Title>
+          </Body>
+        </Header>
+        <Content>
+          <ArticleList />
+        </Content>
+      </Container>
     );
   }
 }

@@ -18,6 +18,7 @@ const styles = {
     flex: 1
   },
   headline: {
+    paddingBottom: 5,
     fontSize: 18,
     fontWeight: "bold"
   },
