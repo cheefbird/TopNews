@@ -8,9 +8,9 @@ export default class App extends Component {
   render() {
     return (
       <Container>
-        <Header>
+        <Header iosBarStyle="light-content" style={styles.header}>
           <Body>
-            <Title>Top News</Title>
+            <Title style={{ color: "#fff" }}>Top News</Title>
           </Body>
         </Header>
         <Content>
@@ -25,5 +25,9 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#F5FCFF"
+  },
+  header: {
+    backgroundColor: "#000",
+    borderBottomColor: "#cbcbcb"
   }
 });
