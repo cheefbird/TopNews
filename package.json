@@ -8,21 +8,21 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
-    "native-base": "^2.4.2",
+    "native-base": "^2.4.5",
     "react": "16.3.1",
-    "react-native": "0.55.3",
+    "react-native": "0.55.4",
     "react-redux": "^5.0.7",
     "redux": "^4.0.0",
-    "redux-thunk": "^2.2.0"
+    "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.3",
     "babel-jest": "22.4.3",
     "babel-preset-react-native": "4.0.0",
     "eslint": "^4.19.1",
-    "eslint-plugin-react": "^7.7.0",
+    "eslint-plugin-react": "^7.9.1",
     "jest": "22.4.3",
-    "prettier": "^1.12.1",
+    "prettier": "^1.13.4",
     "react-test-renderer": "16.3.1"
   },
   "jest": {
